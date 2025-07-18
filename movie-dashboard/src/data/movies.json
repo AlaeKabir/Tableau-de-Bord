@@ -1,0 +1,7 @@
+[
+  { "title": "Inception", "year": 2010, "genre": "Sci-Fi", "revenue": 825, "rating": 8.8 },
+  { "title": "Titanic", "year": 1997, "genre": "Drama", "revenue": 2187, "rating": 7.8 },
+  { "title": "Avatar", "year": 2009, "genre": "Sci-Fi", "revenue": 2847, "rating": 7.9 },
+  { "title": "The Dark Knight", "year": 2008, "genre": "Action", "revenue": 1004, "rating": 9.0 },
+  { "title": "The Godfather", "year": 1972, "genre": "Crime", "revenue": 246, "rating": 9.2 }
+]
