@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tableau-de-Bord/static/css/main.30dc260d.css",
+    "main.js": "/Tableau-de-Bord/static/js/main.fb65b6d9.js",
+    "index.html": "/Tableau-de-Bord/index.html",
+    "main.30dc260d.css.map": "/Tableau-de-Bord/static/css/main.30dc260d.css.map",
+    "main.fb65b6d9.js.map": "/Tableau-de-Bord/static/js/main.fb65b6d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30dc260d.css",
+    "static/js/main.fb65b6d9.js"
+  ]
+}
