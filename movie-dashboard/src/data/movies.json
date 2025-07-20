@@ -3,5 +3,20 @@
   { "title": "Titanic", "year": 1997, "genre": "Drama", "revenue": 2187, "rating": 7.8 },
   { "title": "Avatar", "year": 2009, "genre": "Sci-Fi", "revenue": 2847, "rating": 7.9 },
   { "title": "The Dark Knight", "year": 2008, "genre": "Action", "revenue": 1004, "rating": 9.0 },
-  { "title": "The Godfather", "year": 1972, "genre": "Crime", "revenue": 246, "rating": 9.2 }
+  { "title": "The Godfather", "year": 1972, "genre": "Crime", "revenue": 246, "rating": 9.2 },
+  { "title": "Frozen", "year": 2013, "genre": "Animation", "revenue": 1276, "rating": 7.5 },
+  { "title": "Black Panther", "year": 2018, "genre": "Action", "revenue": 1347, "rating": 7.3 },
+  { "title": "Interstellar", "year": 2014, "genre": "Sci-Fi", "revenue": 677, "rating": 8.6 },
+  { "title": "Parasite", "year": 2019, "genre": "Thriller", "revenue": 258, "rating": 8.6 },
+  { "title": "Avengers: Endgame", "year": 2019, "genre": "Action", "revenue": 2798, "rating": 8.4 },
+  { "title": "Joker", "year": 2019, "genre": "Drama", "revenue": 1074, "rating": 8.5 },
+  { "title": "Up", "year": 2009, "genre": "Animation", "revenue": 735, "rating": 8.2 },
+  { "title": "Skyfall", "year": 2012, "genre": "Action", "revenue": 1108, "rating": 7.8 },
+  { "title": "La La Land", "year": 2016, "genre": "Musical", "revenue": 446, "rating": 8.0 },
+  { "title": "The Lion King", "year": 1994, "genre": "Animation", "revenue": 968, "rating": 8.5 },
+  { "title": "Whiplash", "year": 2014, "genre": "Drama", "revenue": 49, "rating": 8.5 },
+  { "title": "Get Out", "year": 2017, "genre": "Thriller", "revenue": 255, "rating": 7.7 },
+  { "title": "Dune", "year": 2021, "genre": "Sci-Fi", "revenue": 402, "rating": 8.1 },
+  { "title": "The Batman", "year": 2022, "genre": "Action", "revenue": 772, "rating": 7.9 },
+  { "title": "Inside Out", "year": 2015, "genre": "Animation", "revenue": 857, "rating": 8.1 }
 ]

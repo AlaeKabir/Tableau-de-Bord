@@ -2,37 +2,226 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg-color-light: #cee9f8;
+  --text-color-light: #222;
+  --bg-color-dark: #1f1f1f;
+  --text-color-dark: #f5f5f5;
+  --accent-color: #00bcd4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+[data-theme='light'] {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+[data-theme='dark'] {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+body, html, .App {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+header h1 {
+  color: white;
+  margin: 0.25rem 0;
+  font-size: 2rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main h2 {
+  color: var(--accent-color);
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: rgba(0, 188, 212, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .card {
+  background-color: rgba(0, 188, 212, 0.2);
+}
+
+.select-wrapper {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.filter-panel {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 188, 212, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.styled-range {
+  width: 200px;
+  accent-color: var(--accent-color);
+}
+
+.styled-select {
+  border-radius: 12px;
+  padding: 0.4rem 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-controls select,
+.filter-controls input[type='range'] {
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.language-buttons button {
+  border: none;
+  background-color: white;
+  color: var(--accent-color);
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select-wrapper,
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.loading-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: var(--bg-color-light);
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
 }

@@ -2,5 +2,9 @@
   "title": "Movie Dashboard",
   "chart1": "Revenue by Movie",
   "chart2": "Average Ratings Over Time",
-  "selectLanguage": "Select Language"
+  "selectLanguage": "Select Language",
+  "filterGenre": "Filter by Genre",
+  "filterYear": "Filter by Year",
+  "resetFilters": "Reset Filters",
+  "all": "All"
 }
